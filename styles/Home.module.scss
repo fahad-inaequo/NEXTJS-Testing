@@ -1,0 +1,31 @@
+._home_container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: -webkit-linear-gradient(125deg, rgb(0, 18, 35), rgb(0, 34, 67));
+  background: linear-gradient(125deg, rgb(0, 18, 35), rgb(0, 34, 67));
+
+  ._home_earth_image {
+    background-image: url("../public/Earth.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    animation: rotation 120s infinite linear;
+    height: 150%;
+    width: 100%;
+    position: relative;
+    left: 50%;
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
